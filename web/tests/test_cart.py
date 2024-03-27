@@ -11,7 +11,7 @@ from .manager_test import BaseTest
 @allure.suite("Работа с корзиной")
 class TestCartPage(BaseTest):
     @allure.title("Успешное добавление товара в корзину")
-    def test_add_to_cart(self, chrome_driver, mocker):
+    def test_add_to_cart(self, chrome_driver):
         login_page = LoginPage(chrome_driver)
         product_page = ProductPage(chrome_driver)
         login_page.go_to_site()
