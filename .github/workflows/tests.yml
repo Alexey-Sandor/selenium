@@ -22,6 +22,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run tests
+      env:
+        MARKER: ${{ github.head_ref }}
       run: |
         if [[ "$MARKER" == tests* ]]; then
           pytest -m "login"
