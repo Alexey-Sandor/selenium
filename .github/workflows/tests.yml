@@ -22,5 +22,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run tests
-      run:
-        pytest
+      run: |
+        if [[ "$MARKER" == tests* ]]; then
+          pytest -m "login"
+        elif [[ "$MARKER" == feature/cart* ]]; then
+          pytest -m "cart"
+        else
+          pytest
+        fi
