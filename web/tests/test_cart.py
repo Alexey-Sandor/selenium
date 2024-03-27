@@ -42,3 +42,5 @@ class TestCartPage(BaseTest):
             ), "Корзина не пустая"
         except AssertionError as e:
             self.handle_assertion_error(chrome_driver, e)
+        finally:
+            product_page.driver.execute_script("window.localStorage.clear();")
