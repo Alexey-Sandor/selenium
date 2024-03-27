@@ -14,7 +14,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.11'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -23,10 +23,4 @@ jobs:
       env:
         MARKER: ${{ github.head_ref }}
       run: |
-        if [[ "$MARKER" == tests* ]]; then
-          pytest -m "auth"
-        elif [[ "$MARKER" == feature/cart* ]]; then
-          pytest -m "cart"
-        else
-          pytest
-        fi
+        pytest
