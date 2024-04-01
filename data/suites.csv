@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Apr 01 13:28:26 GMT 2024","Mon Apr 01 13:28:27 GMT 2024","209","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с невалидным логином",""
-"passed","Mon Apr 01 13:28:26 GMT 2024","Mon Apr 01 13:28:26 GMT 2024","879","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с валидными данными",""
-"passed","Mon Apr 01 13:28:27 GMT 2024","Mon Apr 01 13:28:27 GMT 2024","152","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с пустым логином и паролем",""
