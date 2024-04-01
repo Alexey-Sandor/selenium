@@ -22,6 +22,6 @@ class TestOrderSuite(BaseTest):
         product_page.add_product_to_cart()
         product_page.go_to_cart()
         cart_page.click_checkout()
-        order_page.fill_in_the_form('alexey', 'sandor', '234432')
+        order_page.fill_in_the_form("alexey", "sandor", "234432")
         order_page.click_finish_button()
         assert order_page.driver.current_url == excepted_url

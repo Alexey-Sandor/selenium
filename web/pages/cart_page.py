@@ -2,8 +2,10 @@ import allure
 
 from .base_page import BasePage
 
+
 class CartLocator:
-    CHECKOUT_BUTTON = ('xpath', "//button[@name='checkout']")
+    CHECKOUT_BUTTON = ("xpath", "//button[@name='checkout']")
+
 
 class CartPage(BasePage):
     def click_checkout(self):

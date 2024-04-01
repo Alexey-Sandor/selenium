@@ -9,6 +9,7 @@ class ProductLocator:
     REMOVE_PRODUCT_FROM_CART_BUTTON = ("xpath", "//button[text()='Remove']")
     GO_TO_CART_BUTTON = ("xpath", "//a[@class='shopping_cart_link']")
 
+
 class ProductPage(BasePage):
     def add_product_to_cart(self):
         with allure.step("Добавляем товар в корзину"):

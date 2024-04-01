@@ -5,11 +5,12 @@ from .base_page import BasePage
 
 
 class OrderLocator:
-    FIRST_NAME_INPUT = ('xpath', "//input[@name='firstName']")
-    LAST_NAME_INPUT = ('xpath', "//input[@name='lastName']")
-    POSTAL_CODE_INPUT = ('xpath', "//input[@name='postalCode']")
-    CONTINUE_UNPUT = ('xpath', "//input[@name='continue']")
-    FINISH_BUTTON = ('xpath', "//button[@name='finish']")
+    FIRST_NAME_INPUT = ("xpath", "//input[@name='firstName']")
+    LAST_NAME_INPUT = ("xpath", "//input[@name='lastName']")
+    POSTAL_CODE_INPUT = ("xpath", "//input[@name='postalCode']")
+    CONTINUE_UNPUT = ("xpath", "//input[@name='continue']")
+    FINISH_BUTTON = ("xpath", "//button[@name='finish']")
+
 
 class OrderPage(BasePage):
     def fill_in_the_form(self, first_name, last_name, postal_code):

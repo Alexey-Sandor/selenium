@@ -1,4 +1,4 @@
-import time
+from datetime import datetime
 import allure
 import pytest
 from web.utils.config import Config

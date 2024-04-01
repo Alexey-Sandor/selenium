@@ -11,7 +11,9 @@ class BasePage:
 
     def find_element(self, locator, time=10):
         with allure.step(f"Click on {locator}"):
-            WebDriverWait(self.driver, time).until(EC.presence_of_element_located(locator))
+            WebDriverWait(self.driver, time).until(
+                EC.presence_of_element_located(locator)
+            )
             return WebDriverWait(self.driver, time).until(
                 EC.presence_of_element_located(locator), message="Element not found"
             )

@@ -2,7 +2,6 @@ import pytest
 import allure
 
 
-
 class BaseTest:
     @staticmethod
     def handle_assertion_error(chrome_driver, error_message):
@@ -13,4 +12,3 @@ class BaseTest:
                 attachment_type=allure.attachment_type.PNG,
             )
             raise AssertionError(error_message)
-
