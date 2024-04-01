@@ -50,6 +50,7 @@ jobs:
         allure_report: ./allure-report
         keep_reports: 3
 
+
     - name: Publish test report
       uses: peaceiris/actions-gh-pages@v3
       if: always()
