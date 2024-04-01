@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 29 18:15:28 GMT 2024","Fri Mar 29 18:15:31 GMT 2024","2277","web.tests","Работа с корзиной","TestCartPage","","","test_remove_from_cart",""
+"passed","Mon Apr 01 12:49:11 GMT 2024","Mon Apr 01 12:49:15 GMT 2024","3490","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с валидными данными",""
+"passed","Fri Mar 29 18:15:31 GMT 2024","Fri Mar 29 18:15:32 GMT 2024","484","web.tests","Оформление заказа","TestOrderSuite","","","Оформление заказа",""
+"passed","Mon Apr 01 12:49:15 GMT 2024","Mon Apr 01 12:49:15 GMT 2024","288","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с невалидным логином",""
+"passed","Fri Mar 29 18:15:25 GMT 2024","Fri Mar 29 18:15:28 GMT 2024","3913","web.tests","Работа с корзиной","TestCartPage","","","Успешное добавление товара в корзину",""
+"passed","Mon Apr 01 12:49:15 GMT 2024","Mon Apr 01 12:49:15 GMT 2024","143","web.tests","Авторизация пользователя","TestAuthenticationSuite","","","Авторизация с пустым логином и паролем",""
