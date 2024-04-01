@@ -46,7 +46,7 @@ jobs:
       if: always()
       with:
         gh_pages: gh-pages
-        allure_history: allure-history
+        allure_history: ./allure-history
         allure_results: ./allure_results
 
     - name: Publish test report
@@ -55,4 +55,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
-        publish_dir: allure-history
+        publish_dir: ./allure-history
